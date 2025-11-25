@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 21, 2025 at 07:45 AM
+-- Generation Time: Nov 25, 2025 at 05:09 AM
 -- Server version: 11.4.8-MariaDB-cll-lve
 -- PHP Version: 8.3.27
 
@@ -45,17 +45,17 @@ CREATE TABLE `data_logistik` (
 --
 
 INSERT INTO `data_logistik` (`id`, `nama_barang`, `kode_barang`, `jumlah`, `satuan`, `kondisi`, `lokasi`, `keterangan`, `created_at`, `updated_at`) VALUES
-(4, 'Alat bidik', NULL, 3, 'Unit', 'Baik', 'Gudang A1', '', '2025-11-11 04:06:08', '2025-11-18 06:04:04'),
+(4, 'Alat bidik', '', 3, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-11 04:06:08', '2025-11-21 14:45:30'),
 (9, 'Teropong', '88', 4, 'Unit', 'Baik', 'Gudang B1', '', '2025-11-11 04:07:45', '2025-11-11 10:42:48'),
 (11, 'Alat Optik', '-', 4, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-11 04:08:23', '2025-11-11 08:09:48'),
-(19, 'Kevlar', NULL, 59, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-11 04:28:05', '2025-11-21 12:39:20'),
-(20, 'FIELD BED', '000', 88, 'Buah', 'Baik', 'Gudang Logistik', '', '2025-11-19 01:26:52', '2025-11-21 10:22:39'),
+(19, 'Kevlar', NULL, 60, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-11 04:28:05', '2025-11-21 17:08:10'),
+(20, 'FIELD BED', '000', 77, 'Buah', 'Baik', 'Gudang Logistik', '', '2025-11-19 01:26:52', '2025-11-22 01:25:23'),
 (24, 'TAS SENPI MOLAY', '01', 43, 'Buah', 'Baik', 'Gudang Logistik', '', '2025-11-19 01:39:41', '2025-11-21 10:23:55'),
-(25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 2742, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:06:18', '2025-11-21 10:22:39'),
-(26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 1790, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:07:08', '2025-11-21 10:22:39'),
-(30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3040, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:08:25', '2025-11-21 10:22:39'),
-(31, 'MAG AK 101/102', '03', 245, 'Buah', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:10:28', '2025-11-21 10:28:25'),
-(32, 'MAG STEYR AUG', '11', 7, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-21 10:19:25', '2025-11-21 10:23:11');
+(25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 2522, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:06:18', '2025-11-22 01:25:23'),
+(26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 1381, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:07:08', '2025-11-22 01:25:23'),
+(30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3009, 'butir', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:08:25', '2025-11-22 01:25:23'),
+(31, 'MAG AK 101/102', '03', 218, 'Buah', 'Baik', 'Gudang Logistik', '', '2025-11-19 02:10:28', '2025-11-22 01:25:23'),
+(32, 'MAG STEYR AUG', '11', 6, 'Unit', 'Baik', 'Gudang Logistik', '', '2025-11-21 10:19:25', '2025-11-21 19:25:45');
 
 -- --------------------------------------------------------
 
@@ -80,18 +80,18 @@ CREATE TABLE `data_pemegang_senpi` (
 --
 
 INSERT INTO `data_pemegang_senpi` (`id`, `no`, `jenis_senpi`, `no_senpi`, `nama_pemegang`, `pangkat_nrp`, `keterangan`, `created_at`, `updated_at`) VALUES
-(1, 1, 'AK 101 KAL 5,56 mm', '1612.08296', 'SURIADI', 'BRIPKA /79051335', 'GUDANG', '2025-08-31 16:11:29', '2025-11-21 08:14:55'),
+(1, 1, 'AK 101 KAL 5,56 mm', '1612.08296', 'SURIADI', 'BRIPKA /79051335', 'GUDANG', '2025-08-31 16:11:29', '2025-11-21 19:20:25'),
 (2, 2, 'AK 101 KAL 5,56 mm', '1612.05433', 'MUHAMMAD ZAINI', 'BRIPKA/83071369', 'GUDANG', '2025-08-31 16:11:29', '2025-11-21 09:22:46'),
 (3, 3, 'AK 101 KAL 5,56 mm', '1612.04487', 'AGUSNIADI, Amk', 'BRIPKA/84081923', 'GUDANG', '2025-08-31 16:11:29', '2025-11-18 05:34:16'),
 (4, 4, 'AK 101 KAL 5,56 mm', '1612.05156', 'ZULFIKAR, Amd Kep', 'BRIPKA/84011292', 'GUDANG', '2025-08-31 16:11:29', '2025-11-09 09:45:15'),
 (5, 5, 'AK 101 KAL 5,56 mm', '1612.05707', 'ANDI SURAHMI', 'BRIPKA/85011500', 'GUDANG', '2025-08-31 16:11:29', '2025-11-09 09:45:00'),
 (6, 6, 'AK 101 KAL 5,56 mm', '1612.01123', 'DANI RAMADHAN', 'BRIPKA /85021099', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 06:02:33'),
 (7, 7, 'AK 101 KAL 5,56 mm', '1612.05753', 'MULIADI, S.E', 'BRIPKA/85031484', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 06:05:28'),
-(8, 8, 'AK 101 KAL 5,56 mm', '1612.10353', 'ARDIANSYAH', 'BRIPKA/85071421', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 06:05:55'),
+(8, 8, 'AK 101 KAL 5,56 mm', '1612.10353', 'ARDIANSYAH', 'BRIPKA/85071421', 'DINAS', '2025-08-31 16:11:29', '2025-11-21 17:11:13'),
 (9, 9, 'AK 101 KAL 5,56 mm', '1612.08694', 'AGUS EDWAR', 'BRIPKA/85081496', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 06:06:32'),
 (10, 10, 'AK 101 KAL 5,56 mm', '1612.05325', 'MUHAMMAD NASIR', 'BRIPKA/85111084', 'GUDANG', '2025-08-31 16:11:29', '2025-11-15 08:00:42'),
-(11, 11, 'AK 101 KAL 5,56 mm', '1612.06888', 'FAUZI', 'BRIPKA /86051183', 'GUDANG', '2025-08-31 16:11:29', '2025-11-21 08:32:13'),
-(12, 12, 'AK 101 KAL 5,56 mm', '1612.04223', 'YUSWARDI YUSUF', 'BRIPKA/86070947', 'GUDANG', '2025-08-31 16:11:29', '2025-11-15 05:48:21'),
+(11, 11, 'AK 101 KAL 5,56 mm', '1612.06888', 'FAUZI', 'BRIPKA /86051183', 'DINAS', '2025-08-31 16:11:29', '2025-11-21 17:17:49'),
+(12, 12, 'AK 101 KAL 5,56 mm', '1612.04223', 'YUSWARDI YUSUF', 'BRIPKA/86070947', 'DINAS', '2025-08-31 16:11:29', '2025-11-22 01:25:23'),
 (13, 13, 'AK 101 KAL 5,56 mm', '1612.06795', 'ASRIADI', 'BRIPKA /86120639', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 10:41:47'),
 (14, 14, 'AK 101 KAL 5,56 mm', '1612.08322', 'ADI SAPUTRA', 'BRIPKA/84091744', 'GUDANG', '2025-08-31 16:11:29', '2025-11-11 10:42:28'),
 (19, 15, 'AK 101 KAL 5,56 mm', '1612.08767', 'SYAHRUDDIN', 'BRIPKA/86061209', 'GUDANG', '2025-11-18 01:15:28', '2025-11-18 01:15:45'),
@@ -120,29 +120,29 @@ INSERT INTO `data_pemegang_senpi` (`id`, `no`, `jenis_senpi`, `no_senpi`, `nama_
 (42, 38, 'AK 101 KAL 5,56 mm', '1612.10258', 'SUHAIDI', 'BAHARAKA/92010480', 'GUDANG', '2025-11-18 04:37:20', '2025-11-18 04:37:20'),
 (43, 39, 'AK 101 KAL 5,56 mm', '1612.09772', 'IPANDI', 'BHARAKA/92090437', 'GUDANG', '2025-11-18 04:38:27', '2025-11-18 04:38:27'),
 (44, 40, 'AK 101 KAL 5,56 mm', '1612.02471', 'MUHAMMAD NASIR', 'BHARAKA/93120326', 'GUDANG', '2025-11-18 04:39:31', '2025-11-18 04:39:31'),
-(45, 41, 'AK 101 KAL 5,56 mm', '1612.09590', 'BARMAURI', 'BHARAKA/94110160', 'GUDANG', '2025-11-18 04:40:31', '2025-11-18 04:40:31'),
+(45, 41, 'AK 101 KAL 5,56 mm', '1612.09590', 'BARMAURI', 'BHARAKA/94110160', 'DINAS', '2025-11-18 04:40:31', '2025-11-21 17:21:23'),
 (46, 42, 'AK 101 KAL 5,56 mm', '1612.05820', 'RENDI FIRMANSYAH', 'BHARAKA/94110160', 'GUDANG', '2025-11-18 04:41:59', '2025-11-18 04:41:59'),
 (47, 43, 'AK 101 KAL 5,56 mm', '1612.08004', 'IKHWAN MAULANA', 'BHARAKA/97040005', 'GUDANG', '2025-11-18 04:43:33', '2025-11-18 04:43:33'),
 (48, 44, 'AK 101 KAL 5,56 mm', '1612.03353', 'PURNAMA SANI', 'BAHARAKA/93101129', 'GUDANG', '2025-11-18 04:44:25', '2025-11-18 04:44:25'),
-(49, 45, 'AK 101 KAL 5,56 mm', '1612.12121', 'MUHAMMAD FAUZAN', 'BRIPDA/02091763', 'GUDANG', '2025-11-18 04:45:41', '2025-11-18 04:45:41'),
-(50, 46, 'AK 101 KAL 5,56 mm', '1612.10473', 'RUTHAN ALI RAMADHAN', 'BRIPDA/02111764', 'GUDANG', '2025-11-18 05:21:25', '2025-11-18 05:21:25'),
-(51, 47, 'AK 101 KAL 5,56 mm', '1612.09391', 'JUEN AKSHA', 'BRIPDA/04090741', 'GUDANG', '2025-11-18 05:22:27', '2025-11-21 04:22:44'),
+(49, 45, 'AK 101 KAL 5,56 mm', '1612.12121', 'MUHAMMAD FAUZAN', 'BRIPDA/02091763', 'DINAS', '2025-11-18 04:45:41', '2025-11-22 00:53:26'),
+(50, 46, 'AK 101 KAL 5,56 mm', '1612.10473', 'RUTHAN ALI RAMADHAN', 'BRIPDA/02111764', 'DINAS', '2025-11-18 05:21:25', '2025-11-22 00:52:07'),
+(51, 47, 'AK 101 KAL 5,56 mm', '1612.09391', 'JUEN AKSHA', 'BRIPDA/04090741', 'DINAS', '2025-11-18 05:22:27', '2025-11-22 00:50:51'),
 (52, 48, 'AK 101 KAL 5,56 mm', '1612.10152', 'M. BUCHARI', 'BHARADA/02071749', 'GUDANG', '2025-11-18 05:23:03', '2025-11-21 04:22:46'),
 (53, 49, 'AK 101 KAL 5,56 mm', '1612.09724', 'DONI SETIAWAN', 'BHARADA/03051939', 'GUDANG', '2025-11-18 05:24:03', '2025-11-21 04:22:49'),
-(54, 50, 'AK 101 KAL 5,56 mm', '1612.10318', 'M. RIZKY HIDAYAT', 'BHARADA/03061879', 'GUDANG', '2025-11-18 05:24:40', '2025-11-21 04:22:53'),
+(54, 50, 'AK 101 KAL 5,56 mm', '1612.10318', 'M. RIZKY HIDAYAT', 'BHARADA/03061879', 'DINAS', '2025-11-18 05:24:40', '2025-11-22 00:49:33'),
 (55, 51, 'AK 102 KAL 5.56 mm', '1710.66796', 'EDY SUWANTA GINTING', 'AIPDA/77071000', 'GUDANG', '2025-11-18 05:25:38', '2025-11-18 05:25:38'),
 (56, 52, 'AK 102 KAL 5.56 mm', '1710.60451', 'JOKO DWI SANTOSO, S.H.', 'AIPDA/86020965', 'GUDANG', '2025-11-18 05:26:16', '2025-11-18 05:26:16'),
 (57, 53, 'AK 102 KAL 5.56 mm', '1710.60889', 'FIRDAUS SOFYAN', 'AIPTU/82080358', 'GUDANG', '2025-11-18 05:26:59', '2025-11-18 05:26:59'),
-(58, 54, 'AK 102 KAL 5.56 mm', '1710.61805', 'MUSMULYADI', 'AIPDA/77070921', 'GUDANG', '2025-11-18 05:29:03', '2025-11-18 05:29:03'),
+(58, 54, 'AK 102 KAL 5.56 mm', '1710.61805', 'MUSMULYADI', 'AIPDA/77070921', 'DINAS', '2025-11-18 05:29:03', '2025-11-21 17:09:53'),
 (59, 55, 'AK 102 KAL 5.56 mm', '1712.80151', 'GUNAWAN, S.H.', 'AIPDA/85051656', 'GUDANG', '2025-11-18 05:29:45', '2025-11-18 05:29:45'),
 (60, 56, 'AK 102 KAL 5.56 mm', '1710.65131', 'SUKRI', 'BRIPKA/83081578', 'GUDANG', '2025-11-18 05:30:21', '2025-11-18 05:30:21'),
-(61, 57, 'AK 102 KAL 5.56 mm', '1710.61632', 'ARI IRAWAN', 'BRIPKA/84101843', 'GUDANG', '2025-11-18 05:30:57', '2025-11-18 05:30:57'),
-(62, 58, 'AK 102 KAL 5.56 mm', '1710.61956', 'BAGUS OKTAFRIZAL, S.H.', 'BRIGADIR/92100587', 'DIGUNAKAN', '2025-11-18 05:31:29', '2025-11-21 10:26:04'),
+(61, 57, 'AK 102 KAL 5.56 mm', '1710.61632', 'ARI IRAWAN', 'BRIPKA/84101843', 'DINAS', '2025-11-18 05:30:57', '2025-11-21 17:20:05'),
+(62, 58, 'AK 102 KAL 5.56 mm', '1710.61956', 'BAGUS OKTAFRIZAL, S.H.', 'BRIGADIR/92100587', 'GUDANG', '2025-11-18 05:31:29', '2025-11-21 17:13:56'),
 (63, 59, 'AK 102 KAL 5.56 mm', '1710.64416', 'ZULKARNAINI', 'AIPDA/77070589', 'GUDANG', '2025-11-18 05:32:16', '2025-11-18 05:32:16'),
 (64, 60, 'AK 102 KAL 5.56 mm', '1710.61845', 'ANDERSON LUBIS', 'AIPDA/77070609', 'GUDANG', '2025-11-18 05:33:12', '2025-11-21 04:23:00'),
 (65, 61, 'AK 102 KAL 5.56 mm', '1710.61709', 'MULYANA', 'BRIPKA/87040232', 'GUDANG', '2025-11-18 05:33:47', '2025-11-21 04:23:04'),
-(67, 63, 'STEYR AUG KAL 5.56 mm', '312583', 'SYAIFULLAH SIPAHUTAR, S.H.', 'AKP/76070342', 'GUDANG', '2025-11-18 05:38:41', '2025-11-18 05:38:41'),
-(68, 62, 'STEYR AUG KAL 5.56 mm', '3082013', 'MARSUDI, A.Md., S.T.', 'IPDA/83011186', 'GUDANG', '2025-11-21 04:22:37', '2025-11-21 10:22:39');
+(67, 63, 'STEYR AUG KAL 5.56 mm', '312583', 'SYAIFULLAH SIPAHUTAR, S.H.', 'AKP/76070342', 'GUDANG', '2025-11-18 05:38:41', '2025-11-21 13:48:23'),
+(68, 62, 'STEYR AUG KAL 5.56 mm', '3082013', 'MARSUDI, A.Md., S.T.', 'IPDA/83011186', 'DINAS', '2025-11-21 04:22:37', '2025-11-21 17:16:43');
 
 -- --------------------------------------------------------
 
@@ -196,14 +196,20 @@ CREATE TABLE `peminjaman_dinas` (
 --
 
 INSERT INTO `peminjaman_dinas` (`id`, `nama_tugas`, `penanggung_jawab_nrp`, `penanggung_jawab_nama`, `tanggal_mulai`, `tanggal_selesai_estimasi`, `status`, `tipe_peminjaman`, `keterangan`, `created_at`) VALUES
-(15, 'PENGAMANAN BKO PTPN COT GIREK', 'IPDA/83011186', 'MARSUDI, A.Md., S.T.', '2025-11-20', '2025-11-18', 'Berlangsung', '', '', '2025-11-21 10:23:11'),
-(16, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIGADIR/94020455', 'HERMAN DERMAWAN', '2025-11-18', '2025-11-19', 'Berlangsung', '', '', '2025-11-21 10:23:34'),
 (17, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/04040616', 'RAGIEL SIRAJD', '2025-11-26', '2025-11-25', 'Berlangsung', 'Dinas', '', '2025-11-21 10:23:55'),
 (18, 'Peminjaman Tetap', 'BRIGADIR/92100587', 'BAGUS OKTAFRIZAL, S.H.', '2025-11-26', '2025-11-27', 'Berlangsung', 'Tetap', 'PAM PTPN COT GIREK', '2025-11-21 10:25:07'),
 (19, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/03061438', 'BUGE YEKARIZKI', '2025-11-25', '2025-11-19', 'Berlangsung', 'Dinas', 'PAM PTPN COT GIREK', '2025-11-21 10:26:42'),
-(20, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/03061438', 'BUGE YEKARIZKI', '2025-11-14', '2025-11-26', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 10:27:24'),
-(21, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/03091019', 'HILMI ANDREAN', '2025-11-10', '2025-11-10', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 10:28:25'),
-(26, 'ver', 'BRIPKA /86051183', 'FAUZI', '2025-11-21', '2025-11-22', 'Berlangsung', '', 'erv', '2025-11-21 12:39:20');
+(27, 'PENGAMANAN BKO PTPN COT GIREK', 'AIPDA/77070921', 'MUSMULYADI', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:09:53'),
+(28, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPKA/85071421', 'ARDIANSYAH', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:11:13'),
+(29, 'PENGAMANAN BKO PTPN COT GIREK', 'IPDA/83011186', 'MARSUDI, A.Md., S.T.', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:16:43'),
+(30, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPKA /86051183', 'FAUZI', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:17:49'),
+(31, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPKA/84101843', 'ARI IRAWAN', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:20:05'),
+(32, 'PENGAMANAN BKO PTPN COT GIREK', 'BHARAKA/94110160', 'BARMAURI', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-21 17:21:23'),
+(33, 'PENGAMANAN BKO PTPN COT GIREK', 'BHARADA/03061879', 'M. RIZKY HIDAYAT', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-22 00:49:33'),
+(34, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/04090741', 'JUEN AKSHA', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-22 00:50:51'),
+(35, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/02111764', 'RUTHAN ALI RAMADHAN', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-22 00:52:07'),
+(36, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPDA/02091763', 'MUHAMMAD FAUZAN', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-22 00:53:26'),
+(37, 'PENGAMANAN BKO PTPN COT GIREK', 'BRIPKA/86070947', 'YUSWARDI YUSUF', '2025-11-10', '2025-11-30', 'Berlangsung', '', 'PAM PTPN COT GIREK', '2025-11-22 01:25:23');
 
 -- --------------------------------------------------------
 
@@ -228,14 +234,75 @@ CREATE TABLE `peminjaman_dinas_items` (
 --
 
 INSERT INTO `peminjaman_dinas_items` (`id`, `id_peminjaman_dinas`, `tipe_item`, `id_item`, `nama_item`, `no_seri_item`, `jumlah`, `status_item`, `tanggal_kembali_aktual`) VALUES
-(32, 15, 'Logistik', 32, 'MAG STEYR AUG', '11', 1, 'Dipinjam', NULL),
-(33, 16, 'Logistik', 31, 'MAG AK 101/102', '03', 1, 'Dipinjam', NULL),
 (34, 17, 'Logistik', 24, 'TAS SENPI MOLAY', '01', 1, 'Dipinjam', NULL),
 (35, 18, 'Logistik', 31, 'MAG AK 101/102', '03', 1, 'Dipinjam', NULL),
 (36, 19, 'Logistik', 31, 'MAG AK 101/102', '03', 1, 'Dipinjam', NULL),
-(37, 20, 'Logistik', 31, 'MAG AK 101/102', '03', 1, 'Dipinjam', NULL),
-(38, 21, 'Logistik', 31, 'MAG AK 101/102', '03', 1, 'Dipinjam', NULL),
-(43, 26, 'Logistik', 19, 'Kevlar', NULL, 1, 'Dipinjam', NULL);
+(44, 27, 'Senpi', 58, '1710.61805', '1710.61805', 1, 'Dipinjam', NULL),
+(45, 27, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(46, 27, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 38, 'Dipinjam', NULL),
+(47, 27, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(48, 27, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(49, 27, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(50, 28, 'Senpi', 8, '1612.10353', '1612.10353', 1, 'Dipinjam', NULL),
+(51, 28, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(52, 28, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(53, 28, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(54, 28, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(55, 28, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(56, 29, 'Senpi', 68, '3082013', '3082013', 1, 'Dipinjam', NULL),
+(57, 29, 'Logistik', 32, 'MAG STEYR AUG', '11', 3, 'Dipinjam', NULL),
+(58, 29, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(59, 29, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(60, 29, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(61, 29, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(62, 30, 'Senpi', 11, '1612.06888', '1612.06888', 1, 'Dipinjam', NULL),
+(63, 30, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(64, 30, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(65, 30, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 38, 'Dipinjam', NULL),
+(66, 30, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(67, 30, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(68, 31, 'Senpi', 61, '1710.61632', '1710.61632', 1, 'Dipinjam', NULL),
+(69, 31, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(70, 31, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(71, 31, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(72, 31, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(73, 31, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(74, 32, 'Senpi', 45, '1612.09590', '1612.09590', 1, 'Dipinjam', NULL),
+(75, 32, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(76, 32, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(77, 32, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(78, 32, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(79, 32, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(80, 33, 'Senpi', 54, '1612.10318', '1612.10318', 1, 'Dipinjam', NULL),
+(81, 33, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(82, 33, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(83, 33, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(84, 33, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(85, 33, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(86, 34, 'Senpi', 51, '1612.09391', '1612.09391', 1, 'Dipinjam', NULL),
+(87, 34, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(88, 34, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(89, 34, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(90, 34, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(91, 34, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(92, 35, 'Senpi', 50, '1612.10473', '1612.10473', 1, 'Dipinjam', NULL),
+(93, 35, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(94, 35, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(95, 35, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(96, 35, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(97, 35, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(98, 36, 'Senpi', 49, '1612.12121', '1612.12121', 1, 'Dipinjam', NULL),
+(99, 36, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(100, 36, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(101, 36, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(102, 36, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 1, 'Dipinjam', NULL),
+(103, 36, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL),
+(104, 37, 'Senpi', 12, '1612.04223', '1612.04223', 1, 'Dipinjam', NULL),
+(105, 37, 'Logistik', 31, 'MAG AK 101/102', '03', 3, 'Dipinjam', NULL),
+(106, 37, 'Logistik', 25, 'TAJAM Ammunisi Kal 5.56x45 mm 4 TJ', '02', 20, 'Dipinjam', NULL),
+(107, 37, 'Logistik', 26, 'KARET Ammunisi Kal 5.56x45 mm ', '0000', 37, 'Dipinjam', NULL),
+(108, 37, 'Logistik', 30, 'HAMPA Ammunisi Kal 5.56x45 mm ', '00000', 3, 'Dipinjam', NULL),
+(109, 37, 'Logistik', 20, 'FIELD BED', '000', 1, 'Dipinjam', NULL);
 
 -- --------------------------------------------------------
 
@@ -336,7 +403,7 @@ INSERT INTO `peminjaman_log` (`id`, `senpi_id`, `nama_pemegang`, `pangkat_nrp`, 
 (70, 2, 'MUHAMMAD ZAINI', 'BRIPKA/83071369', 'AK 101 KAL 5,56 mm', '1612.05433', 'rutin', '2025-11-21 15:59:57', '2025-11-21 03:59:59', 'dikembalikan', 'Peminjaman rutin via scan | Dikembalikan otomatis via scan', '2025-11-21 08:59:57', '2025-11-21 08:59:59'),
 (71, 2, 'MUHAMMAD ZAINI', 'BRIPKA/83071369', 'AK 101 KAL 5,56 mm', '1612.05433', 'rutin', '2025-11-21 16:21:40', '2025-11-21 04:21:43', 'dikembalikan', 'Peminjaman rutin via scan | Dikembalikan otomatis via scan', '2025-11-21 09:21:40', '2025-11-21 09:21:43'),
 (72, 2, 'MUHAMMAD ZAINI', 'BRIPKA/83071369', 'AK 101 KAL 5,56 mm', '1612.05433', 'rutin', '2025-11-21 16:22:24', '2025-11-21 04:22:46', 'dikembalikan', 'Peminjaman rutin via scan | Dikembalikan otomatis via scan', '2025-11-21 09:22:24', '2025-11-21 09:22:46'),
-(73, 62, 'BAGUS OKTAFRIZAL, S.H.', 'BRIGADIR/92100587', 'AK 102 KAL 5.56 mm', '1710.61956', 'rutin', '2025-11-21 17:26:04', NULL, 'dipinjam', 'Peminjaman rutin via scan', '2025-11-21 10:26:04', '2025-11-21 10:26:04');
+(73, 62, 'BAGUS OKTAFRIZAL, S.H.', 'BRIGADIR/92100587', 'AK 102 KAL 5.56 mm', '1710.61956', 'rutin', '2025-11-21 17:26:04', '2025-11-22 00:13:00', 'dikembalikan', 'Peminjaman rutin via scan | Dikembalikan: ', '2025-11-21 10:26:04', '2025-11-21 17:13:56');
 
 --
 -- Indexes for dumped tables
@@ -389,31 +456,31 @@ ALTER TABLE `peminjaman_log`
 -- AUTO_INCREMENT for table `data_logistik`
 --
 ALTER TABLE `data_logistik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `data_pemegang_senpi`
 --
 ALTER TABLE `data_pemegang_senpi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `jenis_senpi`
 --
 ALTER TABLE `jenis_senpi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `peminjaman_dinas`
 --
 ALTER TABLE `peminjaman_dinas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `peminjaman_dinas_items`
 --
 ALTER TABLE `peminjaman_dinas_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT for table `peminjaman_log`
